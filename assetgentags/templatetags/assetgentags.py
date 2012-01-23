@@ -1,7 +1,12 @@
 import json
 
 from django import template
-from settings import ASSETS_JSON
+from django.core.exceptions import ImproperlyConfigured
+
+try:
+    from settings import ASSETS_JSON
+except:
+    raise ImproperlyConfigured("Please specify an ASSETS_JSON path in settings.py")
 
 register = template.Library()
 
