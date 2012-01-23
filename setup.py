@@ -13,6 +13,7 @@ setup(
     url = "http://github.com/micrypt/django-assetgentags",
     packages = [
         "assetgentags",
+        "assetgentags.templatetags",
     ],
     classifiers = [
         "Development Status :: 3 - Alpha",
