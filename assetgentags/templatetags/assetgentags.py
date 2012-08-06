@@ -6,7 +6,7 @@ from django.core.exceptions import ImproperlyConfigured
 try:
     from settings import ASSETS_JSON
 except:
-    raise ImproperlyConfigured("Please specify an ASSETS_JSON path in settings.py")
+    raise ImproperlyConfigured("Please specify an ASSETS_JSON path in your settings")
 
 register = template.Library()
 
